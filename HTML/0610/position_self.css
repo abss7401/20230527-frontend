@@ -1,0 +1,37 @@
+body{
+  width: 800px;
+  margin: 0 auto;
+}
+
+h3{
+  font-weight: bolder;
+}
+
+article{
+  width: 350px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+article p{
+  font-size: 12px;
+  line-height: 20px;
+}
+
+footer{
+  clear: left;
+}
+
+footer div{
+  height: 50px;
+  background-color: #333;
+}
+
+footer div p{
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+}

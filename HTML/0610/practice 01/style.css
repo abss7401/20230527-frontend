@@ -1,0 +1,15 @@
+table, th, td{
+  caption-side: bottom;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+
+th{
+  background-color: #eee;
+}
+
+td:first-child{
+  background-color: #eee
+}

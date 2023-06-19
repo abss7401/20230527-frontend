@@ -1,0 +1,185 @@
+/* 웹 문서 작성 시 기본 CSS 설정 */
+*{margin: 0; padding: 0;}
+ul,li{list-style: none;}
+img{border: 0;}
+a{text-decoration: none; color: #000;}
+
+#wrap{
+  width: 100%;
+}
+/* 헤더 영역 */
+#header{
+  width: 100%;
+  height: 100px;
+  background-color:cornflowerblue;
+}
+
+#header_in{
+  margin: 0 auto;
+  width: 1200px;
+  height: 100px;
+  background-color: yellow;
+  position: relative;
+}
+
+#header_in .logo{
+  float: left;
+  line-height: 100px;
+  margin-left: 50px;
+} 
+
+#header_in .navi{
+  background-color: aqua;
+  font-size: 14px;
+  line-height: 100px;
+  float: right;
+  margin-right: 360px;
+}
+
+#header_in .navi li{
+  display: inline-block;
+  text-align: center;
+  padding: 0 25px;
+}
+
+#header_in .search{
+  float: right;
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px 20px;
+}
+
+#header_in .search li{
+  display: inline-block;
+  font-size: 11px;
+}
+
+#header_in .search li{
+  border-right: 1px solid #ccc;
+  padding-right: 7px;
+}
+
+#header_in .search ul li a{
+  color: #808080;
+}
+
+#header_in .search li:nth-of-type(4){
+  border: none;
+}
+
+#header_in .search_box{
+  float: right;
+  margin-top: 10px;
+  height: 30px;
+}
+
+#header_in .search_box input{
+  float: left; 
+  width: 150px;
+  height: 100%;
+}
+
+#header_in .search_box .search_icon{
+  display: inline-block;
+  width: 32px;
+  height: 100%;
+  background-color: rgb(243, 99, 46);
+  color: #fff;
+  text-align: center;
+  margin-right: 30px;
+}
+
+#header_in .search_box .search_icon i{
+  padding-top: 8px;
+}
+
+/* 메인 영역 */
+#advice{
+  width: 100%;
+  height: 750px;
+  background-color: coral;
+}
+
+#advice_head{
+  margin: 0 auto;
+  width: 1200px;
+  height: 260px;
+  background-color: beige;
+}
+
+#advice_body{
+  margin: 0 auto;
+  width: 1200px;
+  height: 490px;
+  background-color: darkkhaki;
+}
+
+#search{
+  width: 100%;
+  height: 750px;
+  background-color: aquamarine;
+}
+
+#search_head{
+  margin: 0 auto;
+  width: 1200px;
+  height: 260px;
+  background-color: beige;
+}
+
+#search_body{
+  margin: 0 auto;
+  width: 1200px;
+  height: 490px;
+  background-color: darkkhaki;
+}
+
+#news{
+  width: 100%;
+  height: 750px;
+  background-color: rgb(126, 130, 232);
+}
+
+#news_head{
+  margin: 0 auto;
+  width: 1200px;
+  height: 260px;
+  background-color: beige;
+}
+
+#news_body{
+  margin: 0 auto;
+  width: 1200px;
+  height: 490px;
+  background-color: darkkhaki;
+}
+
+#board{
+  width: 100%;
+  height: 750px;
+  background-color: rgb(246, 172, 206);
+}
+
+#board_head{
+  margin: 0 auto;
+  width: 1200px;
+  height: 260px;
+  background-color: beige;
+}
+
+#board_body{
+  margin: 0 auto;
+  width: 1200px;
+  height: 490px;
+  background-color: darkkhaki;
+}
+
+/* 푸터 영역 */
+#footer{
+  width: 100%;
+  height: 750px;
+  background-color: rgb(24, 162, 242);
+}

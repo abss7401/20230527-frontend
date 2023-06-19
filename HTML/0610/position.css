@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+
+}
+
+p{
+  border: 1px solid black;
+  width: 150px;
+  display: inline-block;
+}
+
+#id1{
+  position: static;
+}
+
+#id2{
+  position: absolute;
+  left: 150px;
+  top: 0;
+}
+
+#id3{
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+
+#id4{
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}

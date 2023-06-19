@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" midea="print" href="">
+  <style> /* import */
+    @import url("mq.css") only screen and (min-width: 321px) and (max-width: 768px);
+  </style>
+
+  <style media="<조건>">
+    /* 미디어 규칙 */
+  </style>
+
+  <style media="screen" and (max-width: 320px)>
+    body{
+      background-color: chocolate;
+    }
+  </style>
+
+  <style>
+    @media screen and (max-width: 320px) {
+      body{
+      background-color: chocolate;
+    }
+    }
+    @media print and (max-width: 160px){
+      body{
+        background-color: cornflowerblue;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,203 @@
+/* :root{
+  --white color: #fff;
+  --black color: #000;
+  --blue color: blue;
+  --red color: red;
+  --grey dark color: #gray;
+
+  --spacing: 12px;
+
+  font large
+} */
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+button,button:focus{border: 0; cursor: pointer; outline:none;}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #000;
+  color: #fff;
+}
+
+header .logo{
+  font-size: 20px;
+}
+
+header .logo i{
+  color: red;
+}
+
+header .icons .fa-search{
+  margin-right: 12px;
+}
+
+.player{
+  position:sticky;
+  top:0;
+  text-align: center;
+  background-color: #000;
+}
+
+.player video{
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+.infoAndUpnext{
+  padding: 12px;
+}
+
+.info .metadata .hashtag{
+  display: flex;
+  font-size: 12px;
+  color: #045fd4;
+}
+
+.info .metadata .hashtag li{
+  margin-right: 12px;
+}
+
+.info .metadata .titleAndButton{
+  display: flex;
+}
+
+.info .metadata .titleAndButton .title{
+  font-size: 14px;
+  margin-right: 12px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.info .metadata .titleAndButton .moreBtn{
+  height: 100%;
+}
+
+.info .metadata .views{
+  font-size: 12px;
+  color: grey;
+}
+
+.info .actions{
+  display: flex;
+  justify-content: space-around;
+  margin: 12px 0;
+}
+
+.info .actions button{
+  display: flex;
+  flex-direction: column;
+  color: gray;
+}
+
+.info .actions button i{
+  margin: 0 auto;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.info .actions button .fa-thumbs-up{
+  color: #045fd4;
+}
+
+.info .channel{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.info .channel .metadata{
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+
+.info .channel .metadata img{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.info .channel .metadata .info{
+  display: flex;
+  flex-direction: column;
+}
+
+.info .channel .metadata .info .name{
+  font-size: 14px;
+}
+
+.info .channel .metadata .info .subscribers{
+  font-size: 12px;
+  color: grey;
+}
+
+.info .channel .subscribe{
+  text-transform: uppercase;
+  color: red;
+}
+
+.upNext{
+  padding: 6px 8px;
+}
+
+.upNext>.title{
+  font-size: 14px;
+  color: gray;
+}
+
+.upNext .items{
+  display: flex;
+  margin-top: 12px;
+}
+
+.upNext .items .img{
+  flex-basis: 35%;
+  margin-right: 12px;
+}
+
+.upNext .items .img img{
+  width: 100%;
+}
+
+.upNext .items .itemInfo{
+  flex-basis: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.upNext .items .itemInfo .title{
+  font-size: 12px;
+}
+
+.upNext .items .itemInfo .name, .views{
+  font-size: 10px;
+  color: gray;
+}
+
+.upNext .items .moreBtn{
+  flex-basis: 5%;
+  height: 100%;
+}
+
+.infoAndUpnext{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width:750px){
+  .infoAndUpnext{
+    flex-direction: row;
+  }
+  
+}

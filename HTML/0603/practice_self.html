@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프론트엔드-복습2</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <style>
+    header h4{
+      word-spacing: 8px;
+      text-align: center;
+      line-height: 30px;
+    }
+    nav{
+      background-color:lightgreen
+    }
+    a{
+      list-style: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h4 style="color: blue; font-size: 25px;">Welcome to My website</h4>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Section 1</a></li>
+      <li><a href="#" class="through">Section 2</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h4>Section 1</h4>
+      <article>
+        <table>
+          <thead>
+            <th>Header 1</th>
+            <th>Header 2</th>
+          </thead>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+    <section>
+      <h4>Section 2</h4>
+      <article>
+        <a href="#"><img src="https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_1280.jpg" alt="" width="500px" height="300px"/></a>
+        <a href="#"><img src="Images/loveourplanet-gebb9122ac_1280.jpg" alt="" width="21%"/> 
+        </a>
+      </article>
+    </section>
+    <section>
+      <article>
+        <form action="" autocomplete="on">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" placeholder="이름을 입력하세요." required="" autofocus=""/><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="pw" placeholder="비밀번호를 입력하세요." required=""/><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"placeholder="이메일을 입력하세요."/><br>
+            <label for="question">Do you like this form?</label><br>
+            <label for="Yes">Yes</label><input type="radio" name="like" checked=""/>
+            <label for="No">No</label><input type="radio" name="like"/><br>
+            <label for="comments">Comments</label><br>
+            <textarea name="" id="" cols="30" rows="3" placeholder="메세지를 입력하세요."></textarea><br>
+            <button type="submit" class="submit">Submit</button>
+          </fieldset>
+        </form>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
