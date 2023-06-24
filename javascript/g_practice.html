@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트 변수 & 연산자</title>
+</head>
+<body>
+  <script>
+    // 문제 1
+    // 상수는 선언과 동시에 할당(초기화) 되어야한다.
+    // const r;
+    // r = 10;
+    const r = 10;
+    
+    // 문제 2
+    let number = 10;
+
+    console.log(++number); //11
+    console.log(number++); //11
+    console.log(number); //12
+    console.log(++number); //13
+    console.log(number--); //13
+    console.log(number); //12
+
+    //문제 3
+    let inputInch = prompt("inch를 입력하세요.");
+    let inch = Number(inputInch);
+    let cm = 2.54 * inch;
+
+    alert(`${inch}inch는 ${cm}cm입니다.`);
+  </script>
+</body>
+</html>
