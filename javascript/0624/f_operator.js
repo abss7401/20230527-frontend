@@ -11,7 +11,6 @@ console.log(x + y); // 13
 console.log(x - y); // 7
 console.log(x * y); // 30
 console.log(x / y); // 3.333...
-
 console.log(x % y); // 1
 
 console.log(x++); // x를 출력 후에 1을 더함
@@ -39,6 +38,12 @@ console.log(a); // 15
 a -= 2; // a = a - 2와 같다.
 console.log(a); // 13
 
+a *= 2;  // a = a * 2와 같음
+console.log(a);  // 26
+
+a /= 2;  // a = a / 2와 같음
+console.log(a);  // 13
+
 // 3. 비교연산자
 
 // 두 값을 비교하고, 그 결과를 불리언 값으로 변환
@@ -52,6 +57,11 @@ console.log(b == c) // true(타입을 고려하지 않은 동등 비교)
 console.log(b != c) // false(타입을 고려하지 않은 부등 비교)
 console.log(b === c) // false(타입을 고려한 일치 비교)
 console.log(b !== c) // true(타입을 고려한 불일치 비교)
+
+console.log(b > c);    // false
+console.log(b < c);    // false
+console.log(b >= c);   // true
+console.log(b <= c);   // true
 
 // 4. 논리연산자
 

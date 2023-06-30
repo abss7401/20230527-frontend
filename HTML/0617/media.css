@@ -1,43 +1,15 @@
-@media screen and (min-width: 1440px){
-  #container{
-    width: 1140px;
-    margin: 50px auto;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width:1439px){
-  #container{
-    width: 600px;
-    margin: 50px auto;
-  }
-}
-
-@media screen and (max-width: 767px){
-  #container{
-    width: 300px;
-    margin: 50px auto;
-    display: block;
-    float: left;
-  }
-
-  #card{
-    width: 300px;
-    height: 250px;
-  }
-}
-
 *{ margin: 0; padding: 0; box-sizing: border-box;}
 body{background-color: aquamarine;}
 
 #container{
-  width: 1140px;
+  width: 320px;
   margin: 50px auto;
 }
 
 #card{
   position: relative;
-  width: 550px;
-  height: 250px;
+  width: 300px;
+  height: 400px;
   margin: 10px;
   border: 1px solid #ccc;
   background-color: white;
@@ -45,9 +17,58 @@ body{background-color: aquamarine;}
 
 .words{
   position: absolute;
-  left: 310px;
-  top: 50px;
+  left: 50px;
+  top: 250px;
   text-align: center;
   width: 200px;
+  margin-top: 30px;
 }
 
+@media screen and (min-width:768px) and (max-width:1439px) {
+  #container{
+    width: 570px;
+    margin: 50px auto;
+  }
+
+  #card {
+    position: relative;
+    width: 550px;
+    height: 250px;
+    margin: 10px;
+    border: 1px solid #0f0f0f33;
+    background-color: white;
+  }
+
+  .words {
+    position: absolute;
+    left: 320px;
+    top: 50px;
+    text-align: center;
+    width: 200px;
+}
+}
+
+@media screen and (min-width:1440px) {
+  #container{
+    width: 1140px;
+    margin: 50px 0;
+  }
+
+  #card {
+    position: relative;
+    float: left; /* 카드를 가로로 배치 */
+    width: 550px;
+    height: 250px;
+    margin: 10px;
+    border: 1px solid #0f0f0f33;
+    background-color: white;
+  }
+
+  .words {
+    position: absolute;
+    left: 320px;
+    top: 50px;
+    text-align: center;
+    width: 200px;
+}
+}
