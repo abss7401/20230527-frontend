@@ -1,0 +1,15 @@
+#slider{
+  display: flex;
+  align-items: center;
+}
+
+#slide-container{
+  display: flex;
+  overflow: hidden;
+  width: 300px;
+}
+
+.slide{
+  min-width: 100%;
+  transition: 0.3s ease-in-out;
+}

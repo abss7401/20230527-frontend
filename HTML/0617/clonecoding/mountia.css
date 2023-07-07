@@ -82,12 +82,16 @@ header #search ul a>img{
 /* 네비 영역*/
 nav{
   width: 100%;
-  text-align: center;
+  background: url(../../../images/images/nav_area.jpg) no-repeat;
 }
 
 nav ul{
-  background: url(../../../images/images/nav_area.jpg) no-repeat;
-  background-position: center 0px;
+  width: 1005px;
+  margin: 0 auto;
+}
+
+nav ul li{
+  float: left;
 }
 
 /* 메인 영역*/
@@ -129,9 +133,15 @@ main .shoes_menu ul li{
   padding: 5px 0;
 }
 
-main .shoes_menu ul li:last-child{
+main .shoes_menu ul li:hover:not(main .shoes_menu ul li:first-child){
   text-decoration: underline;
-  color:rgb(211, 134, 19)
+  color:orange;
+}
+
+main .shoes_menu ul li:hover:not(main .shoes_menu ul li:first-child):after{
+  content: " > ";
+  font-size: 18px;
+  color: orange;
 }
 
 /* 슈즈 상품 */
@@ -161,4 +171,239 @@ main .shoes span{
   display: block;
   margin-left: 10px;
   margin-bottom: 15px;
+}
+/* 슈즈 바로가기 */
+main #shoes .shoes_shortcut{
+  margin: 100px 0;
+  text-align: center;
+}
+
+main #shoes .shoes_shortcut img{
+  margin: 0 5px;
+}
+
+/* 옷 메뉴 */
+main #clothes{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+main .clothes_menu{
+  width: 170px;
+  margin: 30px 0;
+  margin-left: 70px;
+}
+
+main .clothes_menu ul li:first-child{
+  font-size: 30px;
+  font-weight: bold;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 15px 0;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+main .clothes_menu ul li{
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+main .clothes_menu ul li:hover:not(main .clothes_menu ul li:first-child){
+  text-decoration: underline;
+  color:orange;
+}
+
+main .clothes_menu ul li:hover:not(main .clothes_menu ul li:first-child):after{
+  content: " > ";
+  font-size: 18px;
+  color: orange;
+}
+/* 옷 상품 */
+main .clothes_item{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 70px;
+}
+
+main .clothes{
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+}
+
+main .clothes img{
+  border-bottom: 1px solid #ccc;
+}
+
+main .clothes p{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+main .clothes span{
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+/* 옷 바로가기 */
+main #clothes .clothes_shortcut{
+  width: 1100px;
+  margin-top: 100px;
+}
+
+main #clothes .clothes_shortcut .left{
+  float: left;
+  margin-right: 20px;
+  margin-left: 80px;
+}
+
+main #clothes .clothes_shortcut .left img{
+  display: block;
+  margin-bottom: 20px;
+}
+/* 푸터 영역 */
+footer{
+  width: 100%;
+}
+
+footer #footer_top{
+  margin-top: 80px;
+  background: url(../../../images/images/footer_top_bg.jpg) repeat-x 0 0;
+  
+}
+
+footer #footer_top .footer_img{
+  text-align: center;
+}
+
+footer #footer_top .notice{
+  width: 1000px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 13px;
+}
+
+footer #footer_top .notice span{
+  line-height: 50px;
+}
+
+footer #footer_top .notice span:first-child{
+  font-weight: bold;
+  margin-right: 30px;
+  font-size: 16px;
+}
+
+footer #footer_top .notice span:nth-child(3){
+  float: right;
+  margin-right: 10px;
+}
+
+footer #footer_menu{
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+footer #footer_menu ul{
+  float: left;
+  font-size: 14px;
+}
+
+footer #footer_menu ul:not(footer #footer_menu ul:first-child){
+  margin-left: 50px;
+}
+
+footer #footer_menu ul li{
+  color: #666;
+}
+
+footer #footer_menu ul li:first-child{
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+footer #footer_menu .service{
+  width: 220px;
+  float: right;
+}
+
+footer #footer_menu .service .tel{
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 1px solid #5f5f5f;
+  padding-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+footer #footer_menu .service p{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+footer #footer_menu .service span{
+  color: #666666;
+  font-size: 13px;
+}
+
+footer #footer_bottom{
+  width: 100%;
+  border-top: 5px solid #000;
+}
+
+footer .footer_bottom_in{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+footer .footer_bottom_nav{
+  margin: 20px 0;
+}
+
+footer .footer_bottom_nav ul li{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+footer .footer_bottom_nav ul li:first-child{
+  margin-left: 10px;
+}
+
+footer .footer_bottom_nav ul li::after{
+  content: "/";
+  margin-left: 0px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+footer #footer_bottom .info{
+  font-size: 13px;
+  color: #666;
+  margin-left: 10px;
+  float: left;
+  margin-bottom: 15px;
+}
+
+footer #footer_bottom .family{
+  float: right;
+  margin-right: 30px;
+  position: relative;
+  bottom: 10px;
+}
+
+footer #footer_bottom .family select{
+  display: block;
+  width: 150px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+footer #footer_bottom .family select option{
+  font-size: 13px;
 }

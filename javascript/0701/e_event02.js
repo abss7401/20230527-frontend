@@ -37,16 +37,42 @@ window.addEventListener('click', function(event) {
 
 // addEventListener 매서드를 사용하여 폼 이벤트 핸들러를 등록
 
+let form = document.getElementById('myForm');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // 폼의 기본 제출 동작을 방지
+  console.log('폼이 제출되었습니다.');
+  alert('로그인 되었습니다.');
+})
+
 // 폼 유효성 검사
 
 // 폼 이벤트는 폼 유효성 검사에도 활용
 // 사용자가 폼에 적절한 값을 입력했는지 확인, 그렇지 않다면 경고 메세지를 보여주는 동작을 처리 가능
 
+form.addEventListener('submit', function(event) {
+  let username = document.getElementById('username').value;
 
-// 페이지 로드 이벤트
+  if(username.length < 5) {
+    alert('사용자 이름은 5자 이상이어야 합니다!');
+    event.preventDefault();
+  }
+});
+
+
+// 4. 페이지 로드 이벤트
 
 // load: 페이지의 모든 콘텐츠(이미지, 스크립트 파일, css파일 등)가 완전히 로드 되었을 때 발생
 // DOMcontentLoaded: HTML문서가 완전히 로드되고 DOM 트리가 완성되었을 때 발생, 이미지나 스크립트 파일 등이 아직 로드되지 않아도 이벤트가 발생
 
 // addEventListener 매서드를 사용하여 페이지 로드 이벤트 핸들러를 등록
 
+// load 이벤트 핸들링 예시
+window.addEventListener('load', function() {
+  console.log('페이지의 모든 콘텐츠가 로드되었습니다!');
+})
+
+// DOMContentLoaded 이벤트 핸들링 예시
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM 트리가 완성되었습니다!');
+})

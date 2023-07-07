@@ -53,4 +53,15 @@ btn.addEventListener('click', function() {
 // 이벤트 전파를 중지
 // 현재 이벤트 이후의 전파가 중지, 버블링 또는 캡처링에서의 전파를 방지
 
+let parent = document.getElementById('parents');
+let child = document.getElementById('child');
+
+parent.addEventListener('click', function(event) {
+  alert('부모 요소 클릭');
+});
+
+child.addEventListener('click', function(event) {
+  alert('자식 요소 클릭');
+  event.stopPropagation(); // 버블링 중지
+}, true);
 

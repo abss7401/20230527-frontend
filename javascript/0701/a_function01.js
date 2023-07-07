@@ -62,14 +62,14 @@ const greet3 = () => {
 };
 
 
-//함수 호출
+// 함수 호출
 // 함수이름();
 
 greet();
 greet2();
 
 
-// 함수 호출시 인수와 매개변수 (파라미터 & 아규먼트)
+// 함수 호출시 인수 & 매개변수 (아규먼트 & 파라미터)
 
 // 함수를 호출할 때는 ()괄호 안에 인수(arguments)를 넣어 줄 수 있다.
 // 이 인수는 함수 내부로 전달, 함수 내부에서는 매개변수(parameters)라는 이름으로 사용
@@ -78,7 +78,34 @@ greet2();
 //parameter: 함수의 입력으로 사용되는 변수를 의미, 함수를 정의할 때 괄호 안에 선언
 
 
-// 예제 +
+// 파라미터와 아규먼트의 차이
+
+//* 예제1)
+function add(a, b) { // 파라미터
+  console.log(a + b);
+}
+
+add(3, 5); // 아규먼트
+
+//* 예제2)
+function greeting(name) { // 매개변수
+  console.log(`Hello, ${name} !`);
+};
+
+greeting('Hwany'); // 아규먼트
+
+//! '자바스크립트'에서의 파리미터와 아규먼트 사용
+// 함수 호출 시 전달되는 아규먼트의 수 != 함수 정의 시 선언된 파리미터의 수
+// 파라미터 > 아규먼트: 넘기지 않은 파라미터의 값은 undefined가 된다.
+// 파라미터 < 아규먼트: 초과된 아규먼트는 무시된다.
+
+function log(a) {
+  console.log(a);
+}
+
+log(); // undefined (매개변수로 보낼 인수가 없음)
+log(1); // 1
+log(0, 1, 2); // 0 (1, 2 값은 무시)
 
 
 // 반환 값(return)
@@ -98,11 +125,13 @@ function noReturn() {
 }
 
 let result2 = noReturn();
+console.log(result2); // undefined
 
+//? 실습 예제1: 반환 값이 있는 함수
+// 함수 square 작성해서 파리미터로 x값을 받습니다.
+// 반환 값으로 x의 제곱을 반환합니다.
+// 반환 결과를 변수에 담아 그 변수를 콘솔창에 출력합니다.
 
-
-
-// 예제 +
 function square(x) {
   return x * x;
 };
@@ -123,5 +152,17 @@ let myFunction2 = () => {
   console.log('This is an arrow function');
 };
 
+//? 익명 함수와 화살표 함수의 사용 예제
 
-// 예제 +
+// 배열의 map 메서드에 익명 함수를 사용
+let numbers = [1, 2, 3, 4, 5];
+let add2 = numbers.map(function(x) {
+  return x + x;
+});
+
+console.log(add2);
+
+// 배열의 map 메서드에 화살표 함수를 사용
+let add3 = numbers.map(x => x + x);
+
+console.log(add3);

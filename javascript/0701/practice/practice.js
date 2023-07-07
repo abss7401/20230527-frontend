@@ -1,21 +1,14 @@
-let addButton = document.getElementById('add-btn');
-let todoInput = document.getElementById('todo-input');
-let todoList = document.getElementById('todo-list');
+const todoInput = document.getElementById('todo-input');
+const btn = document.getElementById('add-btn');
+const todoList = document.getElementById('todo-list');
 
-addButton.addEventListener('click', function() {
-  let newItem = document.createElement('li');
-  newItem.textContent = todoInput.value;
-  newItem.classList.add('todo-item');
-  todoList.appendChild(newItem);
-  todoInput.value='';
-});
-
-todoList.addEventListener('click', function(e) {
-  if(e.target.tagName === 'LI') {
-    e.target.classList.toggle('completed');
-  }
-});
-
+btn.addEventListener('click', function() {
+  let newItem = document.createElement('li'); //li 요소 만들기
+  newItem.textContent = todoInput.value; // li 요소 내용 = input 내용값
+  newItem.classList.add('todo-item'); // css의 todo-item 스타일 적용
+  todoList.appendChild(newItem); // li 요소를 ul 요소의 자식으로 연결
+  todoInput.value = ''; // input 내용값 비우기
+})
 
 
 document.addEventListener('DOMContentLoaded', () => {
