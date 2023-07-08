@@ -138,3 +138,19 @@ body.insertBefore(newDiv, firstChild);
 // removeChild(삭제할 자식 요소);
 
 // body.removeChild(newDiv);
+
+
+
+// 스타일 조작
+// 문서 객체의 스타일을 조작할 때는 style 속성을 사용
+
+// CSS != 자바스크립트의 속성이름 설정방식
+
+// background-color: backgroundColor
+// text-align: textAlign
+// font-size: fontSize
+
+
+// style객체 조정방식
+h1.style.backgroundColor // 제일많이사용
+h1.style['backgroundColor']
