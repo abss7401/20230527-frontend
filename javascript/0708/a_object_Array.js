@@ -1,6 +1,9 @@
 // 객체와 배열 고급
 // 자바스크립트를 활용해서 리액트, 뷰 등의 프레임워크 등을 사용해서 개발할 때 사용하는 개념
 
+// eslint 설치 후 
+// clg 입력 후 자동완성 기능: console.log()
+
 // 객체
 
 // 객체 존재 여부
@@ -24,7 +27,7 @@ else{
   console.log('name 속성이 없습니다.');
 }
 
-// 객체의 특정 속성이 false로 변환될 수 있는 값 (0,false,빈 문자열이 아닐 때와 같은 전제가 있어야 사용할 수 있는 코드)
+// 객체의 특정 속성이 false로 변환될 수 있는 값 (0, false, 빈 문자열이 아닐 때와 같은 전제가 있어야 사용할 수 있는 코드)
 
 if(object.name) {
   console.log('name 속성이 있습니다.');
@@ -37,7 +40,7 @@ else{
 // 짧은 연산 조건문을 사용하여 간단하게 작성 가능
 
 object.name || console.log('name 속성이 없습니다.') // true
-object.author || console.log('name 속성이 없습니다.') // false
+object.author || console.log('author 속성이 없습니다.') // false
 
 
 // 객체의 기본 속서 지정
@@ -59,8 +62,8 @@ console.log(object2);
 
 // 자바스크립트 객체를 JSON 형식의 문자열로 변환
 // JSON.stringfy()메소드를 사용
+// JSON.stringfy(value(변환할 값), replacer(선택), space(공백))
 console.log(JSON.stringify(object2, null, 2));
-console.log('========');
 
 // 객체 기본 속성을 지정
 console.log(object2.name = object2.name || '제목미정');
@@ -75,6 +78,8 @@ console.log(object2.author = object2.author || '저자미정');
 // 다중 할당 기본구조
 // [식별자, 식별자, ...] = 배열
 
+// let [a, b]의 형태로 선언했기 때문에
+// a, b는 변수가 됩니다.
 let [a, b] = [1, 2] // a = 1, b = 2가 할당
 console.log(a, b);
 
@@ -83,7 +88,7 @@ console.log(a, b);
 console.log(a, b);
 
 
-// 배열의 크기는 같은 필요가 X
+// 배열의 크기는 같을 필요가 X
 // const 키워드로도 사용할 수 있다.
 
 let arrayA = [1, 2, 3, 4, 5];
@@ -121,6 +126,8 @@ console.log(aaa, bbb);
 
 
 // 배열 전개 연산자
+
+// 얕은 복사
 // 배열과 객체는 할당할 때 얕은 복사라는 것이 이루어짐.
 
 const food1 = ['우유', '식빵'];
@@ -151,10 +158,18 @@ console.log(food4);
 
 // 전개 연산자를 사용한 배열 요소 추가
 
+const food5 = ['두유', '떡'];
+const food6 = ['과자', ...food5, '음료수'];
 // 해당 위치에 복사되어 전개되는 것이므로 위치를 원하는 곳에 놓아서 순서를 바꿀 수 있다.
 
 
 // 2개 이상의 배열을 붙일 경우
+
+const array1 = ['우유', '식빵'];
+const array2 = ['두유', '떡'];
+
+console.log([...array1, ...array2]);
+console.log([...array2, ...array1]);
 
 
 // 객체 전개 연산자
@@ -204,8 +219,27 @@ const cloud3 = {
 }
 
 const star3 = {
+  ...cloud3,
   named: '별',
   age: 2,
-  breed: '리트리버',
   vaccination: true
 }
+
+console.log(JSON.stringify(cloud3));
+console.log(JSON.stringify(star3));
+
+const cloud4 = {
+  name: '구름',
+  age: 3,
+  breed: '푸들'
+}
+
+const star4 = {
+  name: '별', // 기존의 속성을 덮어쓴다.
+  age: 2, // 기존의 속성을 덮어쓴다.
+  vaccination: true,
+  ...cloud4
+}
+
+console.log(JSON.stringify(cloud4));
+console.log(JSON.stringify(star4));

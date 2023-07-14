@@ -22,7 +22,6 @@ nextButton.addEventListener('click', () => {
 });
 
 
-
 function updateSlidePosition() {
   for(let i = 0; i < slides.length; i++) {
     slides[i].style.transform = "translateX(" + -slideIndex * 100 + "%)";

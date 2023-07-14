@@ -20,7 +20,6 @@ function newElement() {
     cell2.innerHTML = purchasePrice.value;
     cell3.innerHTML = quantity.value;
   
-
     let cell4 = newRow.insertCell(3);
     cell4.innerHTML = '<button class="deleteBtn">Delete</button>';
     cell4.querySelector(".deleteBtn").addEventListener("click", function() {
